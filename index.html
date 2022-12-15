@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="container">
+       
+        <div class="sub input-container">
+            <form class="myForm">
+                <h1>English lessons</h1>
+            
+                <div>
+                    <input type="text" class="myDate" max="2999-12-31"  placeholder="YYYY/MM/DD" onfocus="(this.type='date')" onblur="(this.type='text')"> 
+                    <input type="number" placeholder="How many lessons for today" min="1" class="numberForALesson">
+                    <button type="submit" class="send">Submit</button>
+                    <select class="ordering">
+                        <option value="default" class="default">Back to Default Order</option>
+                        <option value="latest" class="latest">The Latest Date First</option>
+                        <option value="oldest" class="oldest">The oldest Date First</option>
+                    </select>
+                </div>
+
+            </form>
+            <h5 class="alert"></h5>
+        </div>
+
+        
+        <div class="sub show-container">
+            <div class="dateForLessons">
+                <article>
+                    <ul></ul>
+                </article>
+            </div>
+        
+
+        </div>
+        <div class="sub result-container">
+            <div>I took <span class="number"></span> lesson(s)</div>
+            <div>I need to pay <span class="peso"></span> PESO</div>
+            <div>Which means <span class="nt"></span> NT</div>
+        </div>
+     
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
