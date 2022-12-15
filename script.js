@@ -1,4 +1,5 @@
 const myForm = document.querySelector('.myForm');
+const fruit = 'banana'
 const myDate = document.querySelector('.myDate');
 const renderLi = document.querySelector('.dateForLessons > article > ul');
 const resultContainer = document.querySelector('.result-container');
